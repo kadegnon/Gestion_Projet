@@ -31,7 +31,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{RAPPORT - Gestion de Projet Informatique}
-\author{David Adegnon, Guillaume Maître, Christelle Trinon, Ludovic Wasterlain\\Groupe 1}
+\author{David Adegnon, Guillaume Maître, Christelle Trinon,\\Ludovic Wasterlain, William Turatsinze, Bastien Müllers\\Groupe 1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -161,9 +161,15 @@
             
             \item \textbf{Maintenabilité}: le code produit respecte plusieurs principes appris en cours d'ingénierie d'architecture logicielle (IALTEM).
             \item \textbf{Souplesse}: chaque partie de l'application a été écrite de manière indépendante. Ainsi, l'évolution de l'application peut se faire sans violer les spécifications définies. Par exemple, on pourrait envisager de remplacer l'application par un application mobile Android, il suffirait simplement de modifier le front-end sans toucher au back-end.
-            \item Testabilité:
-            \item Portabilité: l'application est utilisable sur n'importe quelle machine connectée à internet, pour autant qu'elle dispose d'un navigateur compatible (nos tests ont été effectués sur Chrome v71.0.3578, Firefox v65.0 et Safari v11.1).
-            \item Réutilisabilité: l'application est faites de nombreux composants, réutilisés à plusieurs endroits dans le code et réutilisables dans d'autres logiciels.
+            \item \textbf{Testabilité}:
+            %% TODO Parler des test unitaires et de Jenkins
+            \item \textbf{Portabilité}: l'application est utilisable sur n'importe quelle machine connectée à internet, pour autant qu'elle dispose d'un navigateur compatible . Nous recommandons d'avoir une version équivalente ou supérieure à ceux testé durant la conception de l'application: 
+                \begin{enumerate}
+                    \item Safari v11.1
+                    \item Firefox v65.0
+                    \item Chrome v71.0.3578
+                \end{enumerate}
+            \item \textbf{Réutilisabilité}: l'application est faites de nombreux composants, réutilisés à plusieurs endroits dans le code et réutilisables dans d'autres logiciels.
         \end{itemize}
         
         \noindent Ces décisions ont été prises sans le client mais nous avons tenu compte de ses remarques lors des sprint reviews et apporté les modifications demandées.\\
@@ -323,7 +329,7 @@
                 
            \subsubsection{Conclusion} 
                \noindent Nous avons eu du mal au début à bien répartir les tâches avec de bonnes estimations de temps,... mais au fur et à mesure, nous avons commencé mieux nous en sortir. \\
-                L'un de nos plus gros défaut dans la gestion du temps et des sprints est que nous n'avons pas fait comme montré au cours (tableaux d'emplois du temps,... pour chaque personne). Il aurait également fallu attribuer dès le début toutes les tâches de tous les sprints, et pas configurer les sprints en fin de sprint précédent. 
+                L'un de nos plus gros défaut dans la gestion du temps et des sprints est que nous n'avons pas fait comme montré au cours (tableaux d'emplois du temps,... pour chaque personne). Il aurait également fallu attribuer dès le début toutes les tâches de tous les sprints, et ne pas configurer les sprints en fin de sprint précédent. 
                 
         
         \subsection{Cost Management}
@@ -331,6 +337,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \section{Clôture du projet}
         \noindent Quand le projet a été fini et envoyé, nous nous sommes félicités et avons pris un petit peu de repos avant de nous lancer dans la préparation de la présentation orale. Après celle-ci, nous nous sommes à nouveau félicités puis nous avons rangé notre local et rendu les clés, ce qui a véritablement marqué la fin du projet.\\
-        Notre projet est une réussite, nous avons rendu une application conforme aux attentes du client tout en respectant les échéances. La présentation finale s'est bien passée, nous n'avons pas encore reçu la note mais le professeur et le client avaient l'air satisfaits de notre travail.\\
-    
+        Notre projet est une réussite, nous avons rendu une application conforme aux attentes du client tout en respectant les échéances. La présentation finale s'est bien passée, nous n'avons pas encore reçu la note finale mais le professeur et le client avaient l'air satisfaits de notre travail.\\
+        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+     \section{Améliorations possibles}
+     \noindent Malgré que notre projet s'est bien déroulé, nous avons quand même retenu quelques points pouvant être améliorer selon nos connaissances actuelles du cours de Gestion de projet. Ce qui nous aurait permit de faire un projet encore mieux que ce que nous avons fait. \\
+     Le fait d'avoir expérimenté un tel projet, nous a permis de nous rendre compte de l'utilité des différents points du cours de gestion de projet.
+     
+     
+     \subsection{Gestion du temps}
+     \noindent Sans avoir eu les notions de gestion du temps, de répartition des tâches sur le début du projet, nous avons eu du mal à bien nous organiser au début. Certains réflexes n'étaient pas encore présent et nous nous ne connaissions pas encore assez pour connaître les forces et faiblesse de chacun. Ce qui peut expliquer entre autres nos débuts délicats sur jira. \\
+     Après avoir acquis ces notions, nous avons découverts différents outils et technique de calcul de temps,... pour pouvoir mieux gérer ce genre de problème et prévoir de meilleures zone tampons pour récupérer quand une personne est en surcharge de travail et accumule du retard.
+     \\Par exemple, effectuer les stand-up meeting prévu dans la méthode Agile en détaillant brièvement l'avancement de sa tâche, les éventuelles soucis et le temps disponible pour travailler sur le projet aurait permit au Scrum Master de mieux répartir les tâches et ainsi, avoir un meilleur suivi de chacun.
+     
+     \subsection{Gestion des tâches}
+     \noindent Un autre problème assez récurant lié au fait que nous faisions nos tâches pour les sprints au moment de le commencer. Ce qui finissait toujours par se resentir vers la moitié du sprint car nous remarquions que des tâches manquait, était non cohérente,... . Jira nous permettait de rajouter des tâches dans le sprint mais pas de leurs donner une estimation de valeur. Ce qui rendait la comparaison de charge de travail entre les membres du groupe faussée. Ainsi que des questionnement sur qui fait quoi à certains moments.
+     \\ Nous aurions pû faire une matrice RACI pour définir à l'avance qui s'occupe de quelles parties dans le projet, savoir qui consulter,... durant les phases plus molles ou certains avaient finis leurs tâches et ce demandais quoi faire. \\
+     Nous aurions aussi du prévoir plus de tâche dés le début (par exemple: estimer le plus de tâches possibles au début de chaque sprint) pour avoir toujours des tâches de réserve et une meilleure idée de ce qu'il reste pour à faire avant d'entamer le sprint suivant. S'il reste plus qu'à rajouter des tâches de type "fixer une feature" par exemple c'est beaucoups plus simple et évite des surprise d'oublier des tâches au fûr et à la mesure que les sprints avances.
+     
+     \subsection{Suivi personnel}
+     \noindent Le suivi personnel des membres du groupe aurat été la tâche la plus dure, cela étant du au fait que nous avions d'autres projets sur le coté. Il fallait avancer dans ce projet avec le maximum d'effectif dessus et donc nous n'avons pas toujours pris le temps de bien gérer cette partie là.  \\
+     Avoir un suivi personnel de chacun, même si à première vue peut prendre du temps "inutilement", aurait en réalité permit de savoir un peu mieux que des membres du groupes étaient en difficulté ou commençaient à bloquer sur un point. En ayant ce genre d'information, nous aurions pu remplacer la personne en difficulté et la mettre sur un domaine qu'elle maîtrise mieux ou l'aider directement. Ça aurait pû nous faire gagner du temps sur le long terme. Je pense que un suivi personnel plus régulier aurait aussi pu permettre de remarquer si un membre du groupe ne réalisait une tâche mais était peut-âtre à côté de la plaque sur un aspect technique ou autre plus rapidement qu'au moment ou le membre rend sa tâche qu'il pense "finie".
 \end{document}
