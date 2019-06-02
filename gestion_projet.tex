@@ -134,11 +134,11 @@
     \section{Livrables du projet}
         
         \subsection{Cahier des charges}
-            \noindent Nous avons réalisé un cahier des charges afin de nous assurer, d'une part, que nous n'oublions aucun point et, d'autre part, que notre application serait conforme aux attentes du client. Ce cahier contient l'ensemble des exigences fonctionnelles et non fonctionnelles du projet.
+            \noindent Nous avons réalisé un cahier des charges afin de nous assurer, d'une part, que nous n'oubliions aucun point et, d'autre part, que notre application serait conforme aux attentes du client. Ce cahier contient l'ensemble des exigences fonctionnelles et non fonctionnelles du projet.
             
         \subsection{Application web}
             \noindent Le projet a été livré sous forme d'une application web déployée, pour que le client puisse la tester et la valider. Le déploiement devait se faire sur une machine virtuelle mise à notre disposition et hébergée sur les serveurs de l'université. Il y a aussi une documentation annexée aux livrables pour expliquer le fonctionnement du site.\\
-            Aucun livrable n'a été demandé en cours de projet, cependant, nous avons dû envoyer l'application à la fin du dernier sprint.
+            Aucun livrable n'a été demandé en cours de projet. Nous n'avons dû envoyer l'application qu'à la fin du dernier sprint.
         
         \subsection{Documentation}
             \noindent La documentation est destinée aux utilisateurs. Dans le site, ces derniers ont la possibilité de publier et ajouter des articles ou états de l'art. La documentation sert à expliquer comment faire car cela doit respecter un certain formalisme. La documentation est entre autres là pour rappeler qu'une personne voulant contribuer ou publier doit absolument faire partie d'une institution reconnue et la personne doit s'inscrire au préalable sur le site.
@@ -184,17 +184,18 @@
     
     \subsection{Profil de risque}
         \begin{itemize}
-            \item \textbf{Taille du projet}: le projet a duré 3 mois (risque = 1) et la charge de travail a été estimée à moins de 6 mois/personne (risque = 1). Le risque total est donc de 1.
+            \item \textbf{Taille du projet}: le projet a duré 3 mois (risque = 1) et la charge de travail a été estimée à moins de 420 jours/personne (risque = 1; voir \textit{8.2 Cost Management}). Le risque total est donc de 1.
             \item \textbf{Difficulté technique}: tous les marchés concernés par ce projet sont relativement bien référencés (risque = 1) et la contrainte de performance est normale (risque = 1), ce risque est donc également de 1.
-            \item \textbf{Degré d'intégration}: il n'y a aucune application connexe en chantier (risque = 1) et il y a ? flux inter-applicatifs. Ce risque peut donc être estimé à 1?2?.
+            \item \textbf{Degré d'intégration}: il n'y a aucune application connexe en chantier (risque = 1) et il y a aucun flux inter-applicatif (risque = 1). Ce risque peut donc être estimé à 1.
             \item \textbf{Configuration organisationnelle}: une direction assure la maîtrise d'ouvrage, Benoît Vanderose (risque = 1), il y a un promoteur nommé, impliqué et légitime, Antoine Clarinval (risque = 1). Le projet a été suivi par toutes les parties prenantes (professeur, client et assistants), nous pouvons donc considéré que la direction générale a suivi le projet (risque = 1). Le risque total est de 1.
-            \item \textbf{Changement}: le degré d'évolution organisationnelle est d'écart faible (risque = 1), tandis que celui d'évolution fonctionnelle est d'écart faible?moyen? (risque =) et celui d'évolution technique est d'écart moyen (risque = 2). Il n'y a qu'un site concerné (risque = 1). Le risque total est ici estimé à 2?.
+            \item \textbf{Changement}: le degré d'évolution organisationnelle est d'écart faible (risque = 1), tandis que celui d'évolution fonctionnelle est d'écart faible?moyen? (risque =?) et celui d'évolution technique est d'écart moyen (risque = 2). Il n'y a qu'un site concerné (risque = 1). Le risque total est ici estimé à 1?2?.
             \item \textbf{Faiblesse de l'équipe de projet}: notre équipe a de manière générale de faibles compétences techniques et de moyennes compétences fonctionnelles (respectivement risque 3 et 2). L'image du projet est valorisante (risque = 2). Ce risque est donc de 2.
         \end{itemize}
         
         \begin{center}                               
             \includegraphics[scale=.8]{images/ProfilRisque.png}
-            \captionof{figure}{Profil de risque du projet }
+            \captionof{figure}{Profil de risque du projet}
+            %% mettre le final !!!
             \label{fig:profil_risque}
         \end{center}
     
@@ -218,8 +219,15 @@
     \section{Planification du projet}
         \subsection{Scope Management}
         \noindent Nous avons commencé le projet par une phase de conception et d'analyse. Une fois l'analyse faite à notre niveau et validée par le client, avec certaines remarques, nous avons commencé par l'apprentissage des outils et technologies à utiliser durant le développement. Nous sommes ensuite passés à l'installation de tous les outils et librairies nécessaires pour le bon déroulement du projet. Une fois la mise en place terminée, la phase de développement a commencé.\\
-        La plus grosse partie au lancement du projet était le back-end. L'équipe front-end s'est aussi lancée de son côté dans la réalisation de ses tâches. La connexion entre le back-end et le front-end n'a cependant été faite qu'une fois le back-end entièrement fonctionnel, pour permettre d'avancer sur le reste sans devoir attendre.
-        Ci-dessous se trouve une brève description de nos \textit{sprints} : 
+        La plus grosse partie au lancement du projet était le back-end. L'équipe front-end s'est aussi lancée de son côté dans la réalisation de ses tâches. La connexion entre le back-end et le front-end n'a cependant été faite qu'une fois le back-end entièrement fonctionnel, pour permettre d'avancer sur le reste sans devoir attendre.\\
+        Le modèle RACI de notre projet est le suivant:
+        \begin{center}
+            \includegraphics[scale=.5]{images/RACI.png}
+            \captionof{figure}{Modèle RACI}
+            \label{fig:modele_raci}
+        \end{center}
+                
+        \noindent Voici une brève description de nos \textit{sprints} : 
 
             \subsubsection{Sprint 1}
                 \noindent Le premier sprint était centré sur la découverte de  Jira, la mise en commun et au propre de nos idées via des post-it en classification Must-have et Nice-to-have. 
@@ -242,7 +250,7 @@
                         \hfill                        \fbox{\includegraphics[scale=.2]{images/protos/proto-tableau-1.jpg}}
                         \hfill
                         \fbox{\includegraphics[scale=.165]{images/protos/wireframe.png}}
-                        \caption{Sprint 1: Aperçus de prototypes et wireframes}
+                        \caption{Sprint 1: Aperçus de prototypes et wireframe}
                         \label{fig:sprint1_protos}
                     \end{figure}
             \end{center}   
@@ -253,7 +261,7 @@
                 
                  \begin{center}
                     \includegraphics[scale=.2]{images/sprint/personna-jean-cive.png}
-                    \captionof{figure}{Sprint 1: Personna principal - Jean Cive}%
+                    \captionof{figure}{Sprint 1: Personna principal - Jean Cive}
                     \label{fig:sprint1_personna}
 
                     \begin{figure}[!htb]
@@ -262,7 +270,7 @@
                             \caption{Personna board}\label{fig:board_user_personnas}
                         \endminipage
                         \hfill
-                        \minipage{0.48\textwidth}%
+                        \minipage{0.48\textwidth}
                             \includegraphics[width=\linewidth]{images/sprint/user-stories.jpg}
                             \caption{User stories}\label{fig:board_user_stories}
                         \endminipage
@@ -317,7 +325,7 @@
                 
                 
             \subsubsection{Sprint 4}
-                \noindent Sprint fort ressemblant au sprint précédent. Nous avons profité de la période de congé pour avancer le plus possible dans l'application. Nous avons aussi ajouté pas mal de tâches en cours de sprint car nous découvrions des bugs ou des fonctionnalités manquantes à ajouter. 
+                \noindent Sprint fort ressemblant au sprint précédent. Nous avons profité de la période de congé pour avancer le plus possible dans l'application. Nous avons aussi ajouté pas mal de tâches en cours de sprint car nous découvrions des bugs ou des fonctionnalités manquantes à ajouter. Le graphique ne monte pas car nous n'avions pas encore trouver comment estimer les tâches ajoutées en cours de sprint.
                 Ceci explique en partie l'écart final dans le graphique ci-dessous.
                 
                 \begin{center}
@@ -329,7 +337,7 @@
         
         
             \subsubsection{Sprint 5}
-                \noindent Il s'agit du dernier sprint du projet, nous avons découvert pas mal de bugs et fonctionnalités pas assez développées mais l'ensemble de l'application était présent. Le graphique de ce sprint montre bien que des tâches ont été ajoutées en cours de sprint car la charge de travail restant monte et descend à plusieurs reprises. 
+                \noindent Il s'agit du dernier sprint du projet, nous avons découvert pas mal de bugs et fonctionnalités manquantes ou pas assez développées mais l'ensemble de l'application était présent. Le graphique de ce sprint montre bien que des tâches ont été ajoutées en cours de sprint car la charge de travail restant monte et descend à plusieurs reprises. 
                 
                 \begin{center}
                     %%\includegraphics[scale=1]{images/graph/sprint5.png}
@@ -341,10 +349,18 @@
                 
            \subsubsection{Conclusion} 
                \noindent Nous avons eu du mal au début à bien répartir les tâches avec de bonnes estimations de temps,... mais au fur et à mesure, nous avons commencé mieux nous en sortir. \\
-                L'un de nos plus gros défaut dans la gestion du temps et des sprints est que nous n'avons pas fait comme montré au cours (tableaux d'emplois du temps,... pour chaque personne). Il aurait également fallu attribuer dès le début toutes les tâches de tous les sprints, et ne pas configurer les sprints en fin de sprint précédent. 
+                L'un de nos plus gros défaut dans la gestion du temps et des sprints est que nous n'avons pas fait comme montré au cours (tableaux d'emplois du temps,... pour chaque personne). Il aurait également fallu attribuer dès le début toutes les tâches de tous les sprints et ne pas les configurer en fin de sprint précédent mais cela ne rentre pas dans la philosophie Agile. 
                 
         
         \subsection{Cost Management}
+            \noindent Au niveau de l'effort de développement, il y a deux éléments à discuter: la charge et la durée du projet.
+            \begin{enumerate}
+                \item La charge de travail a été estimée à 420 jours/personne.
+                \item La durée de travail a été estimée à 6 personnes pendant 70 jours. Il est important de préciser que la durée estimée ici ne correspond pas à la durée réelle du projet, qui est de 3 mois, car ce projet est réalisé par des étudiants, il est donc difficile de travailler dessus 8h/jour tous les jours.
+            \end{enumerate}
+            Les chiffres ci-dessus ont été estimés de façon à correspondre à plus ou moins 3h de travail par jour et par personne pendant 3 mois.
+            
+            Pour ce qui est du budget, étant donné que c'est un projet étudiant, cela n'a pas beaucoup de sens de faire une estimation.
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \section{Clôture du projet}
@@ -355,21 +371,20 @@
     \newpage
     
      \section{Améliorations possibles}
-     \noindent Malgré que notre projet se soit bien déroulé, nous avons quand même retenu quelques points pouvant être améliorer selon nos connaissances actuelles du cours de Gestion de projet. Ce qui nous aurait permit de faire un projet encore meilleur. \\
-     Le fait d'avoir expérimenté un tel projet, nous a permis de nous rendre compte de l'utilité des différents points du cours de Gestion de projet.
-     
+     \noindent Malgré le fait que notre projet se soit bien déroulé, nos connaissances actuelles du cours de Gestion de Projet nous ont fait remarquer quelques points pouvant être améliorés. Cela nous aurait permis de faire un projet encore meilleur. \\
+     Avoir expérimenté un tel projet nous a permis de nous rendre compte de l'utilité des différents points du cours de Gestion de Projet.
      
      \subsection{Gestion du temps}
-     \noindent Sans avoir eu les notions de gestion du temps, de répartition des tâches sur le début du projet, nous avons eu du mal à bien nous organiser. Certains réflexes n'étaient pas encore présents et nous ne connaissions pas encore assez pour identifier les forces et faiblesse de chacun. Ce qui peut expliquer entre autres nos débuts délicats sur \textbf{Jira}. \\
-     Après avoir acquis ces notions, nous avons découverts différents outils et technique de calcul de temps,... pour pouvoir mieux gérer ce genre de problème et prévoir de meilleures zone tampons pour récupérer quand une personne était en surcharge de travail et accumulait du retard.
-     \\Par exemple, effectuer les stand-up meeting prévu dans la méthode Agile en détaillant brièvement l'avancement de sa tâche, les éventuelles soucis et le temps disponible pour travailler sur le projet aurait permit au Scrum Master de mieux répartir les tâches et ainsi, avoir un meilleur suivi de chacun.
+     \noindent Sans avoir vu les notions de gestion du temps et de répartition des tâches sur le début du projet, nous avons eu du mal à bien nous organiser. Certains réflexes n'étaient pas encore présents et nous ne nous connaissions pas encore assez pour identifier les forces et faiblesses de chacun. Ceci peut entre autres expliquer nos débuts délicats sur \textbf{Jira}. \\
+     Après avoir acquis ces notions, nous avons découverts différents outils et techniques de calcul de temps,... pour pouvoir mieux gérer ce genre de problème et prévoir de meilleures zones tampons pour récupérer quand une personne était en surcharge de travail et accumulait du retard.
+     \\Par exemple, effectuer les stand-up meetings prévu dans la méthode Agile en détaillant brièvement l'avancement de sa tâche, les éventuels soucis et le temps disponible pour travailler sur le projet aurait permit au SM de mieux répartir les tâches et ainsi, avoir un meilleur suivi de chacun.
      
      \subsection{Gestion des tâches}
-     \noindent Un autre problème assez récurant lié au fait que nous faisions nos tâches pour les sprints au moment de le commencer. Ce qui finissait toujours par se resentir vers la moitié du sprint car nous remarquions que des tâches manquait, était non cohérente,... . Jira nous permettait de rajouter des tâches dans le sprint mais pas de leurs donner une estimation de valeur. Ce qui rendait la comparaison de charge de travail entre les membres du groupe faussée. Ainsi que des questionnement sur qui fait quoi à certains moments.
-     \\ Nous aurions pû faire une matrice RACI pour définir à l'avance qui s'occupe de quelles parties dans le projet, savoir qui consulter,... durant les phases plus molles ou certains avaient finis leurs tâches et ce demandais quoi faire. \\
-     Nous aurions aussi du prévoir plus de tâche dés le début (par exemple: estimer le plus de tâches possibles au début de chaque sprint) pour avoir toujours des tâches de réserve et une meilleure idée de ce qu'il reste pour à faire avant d'entamer le sprint suivant. S'il reste plus qu'à rajouter des tâches de type "fixer une feature" par exemple c'est beaucoups plus simple et évite des surprise d'oublier des tâches au fûr et à la mesure que les sprints avances.
+     \noindent Un autre problème assez récurrent est lié au fait que nous faisions nos tâches pour les sprints au moment de les commencer. Ce qui finissait toujours par se resentir vers la moitié du sprint car nous remarquions que des tâches manquaient, étaient non cohérentes,... . Jira nous permettait d'ajouter des tâches dans le sprint mais pas de leur donner une estimation de valeur. Ce qui rendait la comparaison de charge de travail entre les membres du groupe faussée. Ainsi que des questionnements sur qui fait quoi à certains moments. Nous avons fini par trouver un moyen d'estimer les tâches ajoutées en cours de sprints mais c'était lors du dernier sprint.
+     \\ Nous aurions pu faire une matrice RACI pour définir à l'avance qui s'occupe de quelles parties dans le projet, savoir qui consulter,... durant les phases plus molles où certains avaient finis leurs tâches et se demandaient quoi faire. \\
+     Nous aurions aussi dû prévoir plus de tâches dés le début (par exemple, estimer le plus de tâches possibles au début de chaque sprint) pour avoir toujours des tâches de réserve et une meilleure idée de ce qu'il reste à faire avant d'entamer le sprint suivant. S'il ne reste plus qu'à rajouter des tâches de type "fixer une feature" par exemple, c'est beaucoup plus simple et cela évite des surprises, comme oublier des tâches au fur et à mesure que les sprints avancent.
      
      \subsection{Suivi personnel}
-     \noindent Le suivi personnel des membres du groupe aurat été la tâche la plus dure, cela étant du au fait que nous avions d'autres projets sur le coté. Il fallait avancer dans ce projet avec le maximum d'effectif dessus et donc nous n'avons pas toujours pris le temps de bien gérer cette partie là.  \\
-     Avoir un suivi personnel de chacun, même si à première vue peut prendre du temps "inutilement", aurait en réalité permit de savoir un peu mieux que des membres du groupes étaient en difficulté ou commençaient à bloquer sur un point. En ayant ce genre d'information, nous aurions pu remplacer la personne en difficulté et la mettre sur un domaine qu'elle maîtrise mieux ou l'aider directement. Ça aurait pû nous faire gagner du temps sur le long terme. Je pense que un suivi personnel plus régulier aurait aussi pu permettre de remarquer si un membre du groupe ne réalisait une tâche mais était peut-âtre à côté de la plaque sur un aspect technique ou autre plus rapidement qu'au moment ou le membre rend sa tâche qu'il pense "finie".
+     \noindent Le suivi personnel des membres du groupe aurait été la tâche la plus dure car nous avions d'autres projets sur le côté. Il fallait avancer sur ce projet avec le maximum d'effectif possible et nous n'avons pas toujours pris le temps de bien gérer cette partie.  \\
+     A première vue, avoir un suivi personnel de chacun semble prendre du temps "inutilement". Mais, en réalité, cela aurait permis de savoir un peu mieux quand des membres du groupe étaient en difficulté ou commençaient à bloquer sur un point. En ayant ce genre d'information, nous aurions pu remplacer la personne en difficulté et la mettre sur un domaine qu'elle maîtrise mieux ou l'aider directement. Cela aurait pu nous faire gagner du temps sur le long terme. Un suivi personnel plus régulier aurait aussi pu permettre de remarquer plus rapidement si un membre du groupe ne réalisait pas une tâche ou s'il n'était pas sur la bonne voie (d'un point de vue technique ou autre) et d'éviter les surprises au moment de la remise des tâches, quand un membre pense que sa tâche est finie alors qu'il n'a pas réalisé ce qui était attendu.
 \end{document}
