@@ -31,7 +31,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{RAPPORT - Gestion de Projet Informatique}
-\author{David Adegnon, Guillaume Maître, Christelle Trinon,\\Ludovic Wasterlain, William Turatsinze, Bastien Müllers\\Groupe 1}
+\author{David Adegnon, Guillaume Maître, Christelle Trinon,\\Ludovic Wasterlain, Bastien Müllers, William Turatsinze\\Groupe 1}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -134,11 +134,11 @@
     \section{Livrables du projet}
         
         \subsection{Cahier des charges}
-            \noindent Nous avons réalisé un cahier des charges afin de nous assurer, d'une part, que nous n'oubliions aucun point et, d'autre part, que notre application serait conforme aux attentes du client. Ce cahier contient l'ensemble des exigences fonctionnelles et non fonctionnelles du projet.
+            \noindent Nous avons réalisé un cahier des charges afin de nous assurer, d'une part, que nous n'oublions aucun point et, d'autre part, que notre application serait conforme aux attentes du client. Ce cahier contient l'ensemble des exigences fonctionnelles et non fonctionnelles du projet.
             
         \subsection{Application web}
             \noindent Le projet a été livré sous forme d'une application web déployée, pour que le client puisse la tester et la valider. Le déploiement devait se faire sur une machine virtuelle mise à notre disposition et hébergée sur les serveurs de l'université. Il y a aussi une documentation annexée aux livrables pour expliquer le fonctionnement du site.\\
-            Aucun livrable n'a été demandé en cours de projet, nous n'avons dû envoyer l'application qu'à la fin du dernier sprint.
+            Aucun livrable n'a été demandé en cours de projet, cependant, nous avons dû envoyer l'application à la fin du dernier sprint.
         
         \subsection{Documentation}
             \noindent La documentation est destinée aux utilisateurs. Dans le site, ces derniers ont la possibilité de publier et ajouter des articles ou états de l'art. La documentation sert à expliquer comment faire car cela doit respecter un certain formalisme. La documentation est entre autres là pour rappeler qu'une personne voulant contribuer ou publier doit absolument faire partie d'une institution reconnue et la personne doit s'inscrire au préalable sur le site.
@@ -161,13 +161,12 @@
             
             \item \textbf{Maintenabilité}: le code produit respecte plusieurs principes appris en cours d'ingénierie d'architecture logicielle (IALTEM).
             \item \textbf{Souplesse}: chaque partie de l'application a été écrite de manière indépendante. Ainsi, l'évolution de l'application peut se faire sans violer les spécifications définies. Par exemple, on pourrait envisager de remplacer l'application par un application mobile Android, il suffirait simplement de modifier le front-end sans toucher au back-end.
-            \item \textbf{Testabilité}:
-            %% TODO Parler des test unitaires et de Jenkins
-            \item \textbf{Portabilité}: l'application est utilisable sur n'importe quelle machine connectée à internet, pour autant qu'elle dispose d'un navigateur compatible . Nous recommandons d'avoir une version équivalente ou supérieure à ceux testé durant la conception de l'application: 
+
+            \item \textbf{Portabilité}: l'application est utilisable sur n'importe quelle machine connectée à internet, pour autant qu'elle dispose d'un navigateur compatible . Nous recommandons d'avoir une version équivalente ou supérieure à ceux testés durant la conception de l'application, à savoir : 
                 \begin{enumerate}
-                    \item Safari v11.1
-                    \item Firefox v65.0
                     \item Chrome v71.0.3578
+                    \item Firefox v65.0
+                    \item Safari v11.1
                 \end{enumerate}
             \item \textbf{Réutilisabilité}: l'application est faites de nombreux composants, réutilisés à plusieurs endroits dans le code et réutilisables dans d'autres logiciels.
         \end{itemize}
@@ -181,23 +180,36 @@
     \newpage
 
     \section{Gestion des risques}
-    \noindent Nous avons identifié deux risques en début de projet et ceux-ci ont bien été gérés dès le départ. Nous avons cependant rencontré un troisième risque en cours de projet. 
+    \noindent Comme il s'agit d'un projet universitaire et que l'application ne sera jamais réellement déployée, l'analyse des risques a été très limitée et nous n'avons pas de registre des risques.
+    
+    \subsection{Profil de risque}
+        \begin{itemize}
+            \item \textbf{Taille du projet}: le projet a duré 3 mois (risque = 1) et la charge de travail a été estimée à moins de 6 mois/personne (risque = 1). Le risque total est donc de 1.
+            \item \textbf{Difficulté technique}: tous les marchés concernés par ce projet sont relativement bien référencés (risque = 1) et la contrainte de performance est normale (risque = 1), ce risque est donc également de 1.
+            \item \textbf{Degré d'intégration}: il n'y a aucune application connexe en chantier (risque = 1) et il y a ? flux inter-applicatifs. Ce risque peut donc être estimé à 1?2?.
+            \item \textbf{Configuration organisationnelle}: une direction assure la maîtrise d'ouvrage, Benoît Vanderose (risque = 1), il y a un promoteur nommé, impliqué et légitime, Antoine Clarinval (risque = 1). Le projet a été suivi par toutes les parties prenantes (professeur, client et assistants), nous pouvons donc considéré que la direction générale a suivi le projet (risque = 1). Le risque total est de 1.
+            \item \textbf{Changement}: le degré d'évolution organisationnelle est d'écart faible (risque = 1), tandis que celui d'évolution fonctionnelle est d'écart faible?moyen? (risque =) et celui d'évolution technique est d'écart moyen (risque = 2). Il n'y a qu'un site concerné (risque = 1). Le risque total est ici estimé à 2?.
+            \item \textbf{Faiblesse de l'équipe de projet}: notre équipe a de manière générale de faibles compétences techniques et de moyennes compétences fonctionnelles (respectivement risque 3 et 2). L'image du projet est valorisante (risque = 2). Ce risque est donc de 2.
+        \end{itemize}
+        
+        \begin{center}                               
+            \includegraphics[scale=.8]{images/ProfilRisque.png}
+            \captionof{figure}{Profil de risque du projet }
+            \label{fig:profil_risque}
+        \end{center}
+    
+    \subsection{Les risques}
+        \noindent Nous avons identifié deux risques en début de projet et ceux-ci ont bien été gérés dès le départ. Nous avons cependant rencontré un troisième risque en cours de projet. 
     
     \begin{enumerate}
-        \item  Le premier risque identifié était le partage du code entre nous. Nous nous y sommes confrontés dès le début du projet. Pour gérer ce problème, nous avons choisi d'utiliser Github, qui permet de  centraliser le code et de gérer les conflits de différence entre les versions de code de chacun. Pour le placer au niveau de la matrice de probabilité de risque, il revenait à 70\% de probabilité et 0,56 niveau impact du risque. \\
+        \item  Le premier risque identifié était le partage du code entre nous. Nous nous y sommes confrontés dès le début du projet. Pour gérer ce problème, nous avons choisi d'utiliser Github, qui permet de  centraliser le code et de gérer les conflits de différence entre les versions de code de chacun. Pour le placer au niveau de la matrice de probabilité de risque, il revenait à 70\% de probabilité et 0,56 niveau impact du risque. \\ Nous avons trouvé une solution donc ce risque a été évité.
         \item Un autre risque était l'utilisation de technologies différentes. Afin d'éviter que chaque personne n'utilise une technologie différente, il a fallu se mettre d'accord sur les technologies, utilisée à la fois en back-end et en front-end. Nous avons géré ce risque en commençant par comparer les technologies et libraires à notre disposition en tenant compte des contraintes.
         Ensuite, avant de nous lancer dans le développement, chaque groupe a du apprendre les bases des technologies à utiliser pour sa partie de l'application.\\
         Enfin, pour combler les différentes lacunes ou ..., on a réalisé du pair programming.
-        Concrètement, à chaque fois qu'un membre du groupe ne pouvait pas réaliser sa tâche ou était dans l'impossibilité de la faire, un autre membre ayant déjà réalisé sa tâche ou ayant un peu plus d'expérience venait épauler les autres.
-        \newline
-        \item Un risque lié au produit est les navigateurs. Les visualisations proposées dans l'application étaient dépendantes du \textit{navigateur} et de sa version de \textit{Javascript}. Il était fort possible qu'avec certains navigateurs, l'affichage de la visualisation ne soit pas disponible ou ne soit pas correct. Pour réduire l'impact, nous avons affiché l'application sur plusieurs navigateurs et choisi le navigateur le plus optimal pour l'affichage des visualisations. Nous avons conseillé ce navigateur pour avoir la meilleure expérience utilisateur.
-        \newline
+        Concrètement, à chaque fois qu'un membre du groupe ne pouvait pas réaliser sa tâche ou était dans l'impossibilité de la faire, un autre membre ayant déjà réalisé sa tâche ou ayant un peu plus d'expérience venait épauler les autres.\\ Une solution a également été trouvée pour ce risque, il a été évité.
+        \item Un risque lié au produit est les navigateurs. Les visualisations proposées dans l'application étaient dépendantes du \textit{navigateur} et de sa version de \textit{Javascript}. Il était fort possible qu'avec certains navigateurs, l'affichage de la visualisation ne soit pas disponible ou ne soit pas correct. Pour réduire l'impact, nous avons affiché l'application sur plusieurs navigateurs et choisi le navigateur le plus optimal pour l'affichage des visualisations: Chrome. Nous avons conseillé ce navigateur pour avoir la meilleure expérience utilisateur. L'application fonctionne également sur Firefox et sur Safari.\\ Ce risque a été réduit: les navigateur testé sont les plus utilisés et nous en recommandons un.
     \end{enumerate}
     
-
-        
-    \textit{IN PROGRESS ...}
-        
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     
@@ -340,15 +352,16 @@
         Notre projet est une réussite, nous avons rendu une application conforme aux attentes du client tout en respectant les échéances. La présentation finale s'est bien passée, nous n'avons pas encore reçu la note finale mais le professeur et le client avaient l'air satisfaits de notre travail.\\
         
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+    \newpage
+    
      \section{Améliorations possibles}
-     \noindent Malgré que notre projet s'est bien déroulé, nous avons quand même retenu quelques points pouvant être améliorer selon nos connaissances actuelles du cours de Gestion de projet. Ce qui nous aurait permit de faire un projet encore mieux que ce que nous avons fait. \\
-     Le fait d'avoir expérimenté un tel projet, nous a permis de nous rendre compte de l'utilité des différents points du cours de gestion de projet.
+     \noindent Malgré que notre projet se soit bien déroulé, nous avons quand même retenu quelques points pouvant être améliorer selon nos connaissances actuelles du cours de Gestion de projet. Ce qui nous aurait permit de faire un projet encore meilleur. \\
+     Le fait d'avoir expérimenté un tel projet, nous a permis de nous rendre compte de l'utilité des différents points du cours de Gestion de projet.
      
      
      \subsection{Gestion du temps}
-     \noindent Sans avoir eu les notions de gestion du temps, de répartition des tâches sur le début du projet, nous avons eu du mal à bien nous organiser au début. Certains réflexes n'étaient pas encore présent et nous nous ne connaissions pas encore assez pour connaître les forces et faiblesse de chacun. Ce qui peut expliquer entre autres nos débuts délicats sur jira. \\
-     Après avoir acquis ces notions, nous avons découverts différents outils et technique de calcul de temps,... pour pouvoir mieux gérer ce genre de problème et prévoir de meilleures zone tampons pour récupérer quand une personne est en surcharge de travail et accumule du retard.
+     \noindent Sans avoir eu les notions de gestion du temps, de répartition des tâches sur le début du projet, nous avons eu du mal à bien nous organiser. Certains réflexes n'étaient pas encore présents et nous ne connaissions pas encore assez pour identifier les forces et faiblesse de chacun. Ce qui peut expliquer entre autres nos débuts délicats sur \textbf{Jira}. \\
+     Après avoir acquis ces notions, nous avons découverts différents outils et technique de calcul de temps,... pour pouvoir mieux gérer ce genre de problème et prévoir de meilleures zone tampons pour récupérer quand une personne était en surcharge de travail et accumulait du retard.
      \\Par exemple, effectuer les stand-up meeting prévu dans la méthode Agile en détaillant brièvement l'avancement de sa tâche, les éventuelles soucis et le temps disponible pour travailler sur le projet aurait permit au Scrum Master de mieux répartir les tâches et ainsi, avoir un meilleur suivi de chacun.
      
      \subsection{Gestion des tâches}
