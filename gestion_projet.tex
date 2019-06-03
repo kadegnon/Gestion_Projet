@@ -31,7 +31,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{RAPPORT - Gestion de Projet Informatique}
-\author{David Adegnon, Guillaume Maître, Christelle Trinon,\\Ludovic Wasterlain, Bastien Müllers, William Turatsinze\\Groupe 1}
+\author{David Adegnon, Guillaume Maître, Christelle Trinon,\\Ludovic Wasterlain, Bastien Müllers, William Turatsinze\\Groupe 1 Info}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -64,7 +64,6 @@
             \item SM : Scrum Master;
             \item OS : Operating System;
             \item API : Application Program Interface;
-            \item SoTA : State of The Art (état de l'art en anglais);
         \end{itemize}
     
     \section{Définitions}
@@ -77,12 +76,13 @@
     \newpage
     \section{Introduction}
     
+    \noindent Ce rapport a été rédigé a posteriori sur le projet qui était à réaliser dans le cadre du cours Ingénierie du Logiciel et Laboratoire (INFOM114).
+    
         \subsection{Contexte}
-            \noindent Actuellement, la publication d'articles scientifiques et des états de l'art est un processus rigoureux et lourd en temps. Ceux-ci doivent passer par un processus de sélection qui peut durer jusqu'à maximum deux ans. Un temps d'attente assez long.\\
-            Notre application a pour but de mettre à disposition du monde scientifique des articles et états de l'art le plus rapidement, sans pour autant que celles-ci soient validés par le monde scientifique. Les utilisateurs de notre portail web pourront voir quels sont les articles déjà validés ou pas. Ainsi contourner un peu ce processus. 
+            \noindent Actuellement, la publication d'articles scientifiques et d'états de l'art est un processus rigoureux et lourd en temps. Ceux-ci doivent passer par un processus de sélection qui peut prendre jusqu'à deux ans. C'est un temps d'attente assez long.
             
         \subsection{Objectif}
-            \noindent Le but du projet est de faciliter la tâche au monde scientifique, en aidant les chercheurs dans la création et la publication d'états de l'art. Actuellement, ce processus peut prendre jusqu'à deux ans. Nous avons créé une application web permettant de mettre en ligne les états de l'art des chercheurs, même si le travail n'a pas encore été approuvé par les pairs, c'est-à-dire les autres chercheurs du domaine, les personnes qui valident (ou non) un article ou un état de l'art.
+            \noindent Le but du projet était de faciliter la tâche au monde scientifique, en aidant les chercheurs dans la création et la publication d'états de l'art tout en leur faisant gagner du temps. Nous avons créé une application web permettant de mettre en ligne les états de l'art des chercheurs, même si le travail n'a pas encore été approuvé par les pairs, c'est-à-dire les autres chercheurs du domaine, les personnes qui valident (ou non) un article ou un état de l'art.
     
         \subsection{Définition du projet}
         \label{section:def_projet}
@@ -91,7 +91,7 @@
             Le projet a duré 3 mois, l'application web devait être déployée le 14 mai et la présentation finale a eu lieu le 16 mai.
         
         \subsection{Contraintes}
-            \noindent Nous devions à la fois créer une application qui respecte les exigences du client, mais aussi qui ne ressemble pas à celles déjà présentes sur le marché (= périmètre). Un exemple d'application de ce genre serait Google Scholar. Il fallait également respecter le délai prévu pour le client tout en fournissant un produit fonctionnel. Ce projet faisant partie de notre cursus, aucun budget n'était prévu, le seul coût était l'effort de développement.\\
+            \noindent Nous devions à la fois créer une application qui respecte les exigences du client, mais aussi qui ne ressemble pas à celles déjà présentes sur le marché (= périmètre). Un exemple d'application de ce genre serait Google Scholar. Il fallait également respecter le délai prévu par le client tout en fournissant un produit fonctionnel. Ce projet faisant partie de notre cursus, aucun budget n'était prévu et le seul coût était l'effort de développement.\\
             \newpage
             Les choix des technologies étaient aussi une contrainte pour nous. En back-end, il nous a été imposé d'utiliser \textit{Java}. Par contre, pour le front-end, nous avons décidé de travailler avec un framework  \textit{Javascript}, \textbf{\textit{VueJS}}. Il nous fallait également une base de données pour pouvoir tester le projet car le client ne nous a pas fourni les données dont nous avions besoin.\\
             Comme il s'agissait d'un projet réalisé dans le cadre d'un cours, nous avions aussi des échéances à respecter, à savoir les sprint reviews en fin de chaque sprint et la date de fin du projet (cf section \ref{section:def_projet}).
@@ -100,12 +100,12 @@
     \section{Organisation du projet}
 
         \subsection{Constitution du groupe de travail}
-            \noindent Les différents groupes se sont formés par tirage au sort en classe, chacun choisissait un papier sur lequel se trouvait le numéro de son groupe. Chaque groupe avait leur propre local de travail dans la faculté. Notre groupe se composait de six personnes et s'est rapidement divisé en deux équipes (front-end et back-end), l'une responsable de la conception de l'API et l'autre de l'application web. Le choix de l'organisation du groupe a été fait de façon presque naturelle et par désignation en fonction des compétences de certains membres du groupe ainsi que de leur expérience. Voici les membres de notre groupe et leur rôle durant le projet:
+            \noindent Les différents groupes se sont formés par tirage au sort en classe, chacun choisissait un papier sur lequel se trouvait le numéro de son groupe. Chaque groupe avait son propre local de travail dans la faculté. Notre groupe se composait de six personnes et s'est rapidement divisé en deux équipes, l'une responsable de la conception de l'API (équipe back-end) et l'autre de l'application web (équipe front-end). Le choix de l'organisation du groupe a été fait de façon presque naturelle et par désignation en fonction des compétences de certains membres du groupe ainsi que de leur expérience. Voici les membres de notre groupe et leur rôle durant le projet:
                 \begin{itemize}
                     \item \textit{David Adegnon} : Team Member. Électron libre entre le back-end et le front-end, en fonction des besoins.
                     \item \textit{Guillaume Maître} : Scrum Master. En charge du front-end, de la cohésion et bonne entente de l'équipe ainsi que de sa productivité.
-                    \item \textit{Bastien Müllers} : Infrastructure Manager.  En charge du déploiement du produit. Il s'occupait aussi de l'API (back-end).
-                    \item \textit{Christelle Trinon} : Product Owner. En charge de la communication avec le client, du cahier de charge (exigences fonctionnelles et non fonctionnelles) et des choix de développement. Elle était aussi dans l'équipe web (front-end).
+                    \item \textit{Bastien Müllers} : Infrastructure Manager.  En charge du déploiement du produit. Il s'occupait aussi de l'API.
+                    \item \textit{Christelle Trinon} : Product Owner. En charge de la communication avec le client, du cahier de charges (exigences fonctionnelles et non fonctionnelles) et des choix de développement. Elle était aussi dans l'équipe web.
                     \item \textit{William Turatsinze} : Team Member. En charge du back-end et de la conception de la base de données pour l'API.
                     \item \textit{Ludovic Wasterlain} : Team Member. En charge de la partie front-end.
                 \end{itemize}
@@ -114,11 +114,11 @@
             
             \newpage
             
-            \noindent Chaque membre a eu une ou plusieurs tâche(s) à compléter pendant chaque sprint (généralement, de deux semaines). Le Product Owner et le Scrum Master créaient les tâches à effectuer pour le sprint et y attribuaient une estimation en terme de points, en se basant sur la suite de Fibonacci (1,2,3,5,8). Après discussion, certaines tâches étaient assignées à des membres du groupe. Sinon, les membres s'assignaient la/les tâche(s) qu'ils souhaitaient réaliser et en ajoutaient éventuellement.\\
+            \noindent Chaque membre a eu une ou plusieurs tâche(s) à compléter pendant chaque sprint (généralement de deux semaines). Le Product Owner et le Scrum Master créaient les tâches à effectuer pour le sprint et y attribuaient une estimation en terme de points, en se basant sur la suite de Fibonacci (1,2,3,5,8). Après discussion, certaines tâches étaient assignées à des membres du groupe. Sinon, les membres s'assignaient la/les tâche(s) qu'ils souhaitaient réaliser et en ajoutaient éventuellement.\\
             Nos réunions se faisaient à la fin des sprint reviews, pour prévoir le sprint suivant et définir le backlog. Nous avons travaillé ensemble dans notre local tout au long du projet, durant au moins 6h par semaine avec l'équipe entièrement présente.
             
         \subsection{Méthode choisie}
-            \noindent La méthode imposée pour la réalisation du projet a été la \textbf{Méthode Agile}. Étant dans une université qui prône \textit{l'agilité} et nous la recommande, il nous semblait, de toute façon, logique de l'adopter. Il nous était aussi demandé d'utiliser \textbf{JIRA}, une application web d'aide à la gestion de tâches dans le cadre du développement agile pour laquelle la faculté dispose d'une licence. Nous nous en sommes donc servi pour gérer l'avancement du projet et savoir où en étaient les différents membres du groupe dans leur(s) tâche(s) respective(s). En complément, nous utilisions aussi le tableau blanc de notre local pour avoir un aperçu rapide de l'avancement global des fonctionnalités de l'application \\
+            \noindent La méthode imposée pour la réalisation du projet a été la \textbf{Méthode Agile}. Étant dans une université qui prône \textit{l'agilité} et nous la recommande, il nous semblait de toute façon logique de l'adopter. Il nous était aussi demandé d'utiliser \textbf{JIRA}, une application web d'aide à la gestion de tâches dans le cadre du développement agile pour laquelle la faculté dispose d'une licence. Nous nous en sommes donc servi pour gérer l'avancement du projet et savoir où en étaient les différents membres du groupe dans leur(s) tâche(s) respective(s). En complément, nous utilisions aussi le tableau blanc de notre local pour avoir un aperçu rapide de l'avancement global des fonctionnalités de l'application. \\
             Nous avons choisi de communiquer via \texbf{Discord}, une plate-forme de messagerie accessible à tous les membres du groupe. Nous avons utilisé \textbf{Github} comme plate-forme de gestion de code, pour éviter certains conflits durant le codage et pour créer des releases en fin de sprints.\\
             
             \begin{center}                               
@@ -145,7 +145,7 @@
             Aucun livrable n'a été demandé en cours de projet. Nous n'avons dû envoyer l'application qu'à la fin du dernier sprint.
         
         \subsection{Documentation}
-            \noindent La documentation est destinée aux utilisateurs. Dans le site, ces derniers ont la possibilité de publier et ajouter des articles ou états de l'art. La documentation sert à expliquer comment faire car cela doit respecter un certain formalisme. La documentation est entre autres là pour rappeler qu'une personne voulant contribuer ou publier doit absolument faire partie d'une institution reconnue et la personne doit s'inscrire au préalable sur le site.
+            \noindent La documentation est destinée aux utilisateurs. Dans le site, ces derniers ont la possibilité d'ajouter des articles ou états de l'art. La documentation sert à expliquer comment faire car cela doit respecter un certain formalisme. La documentation est entre autres là pour rappeler qu'une personne voulant contribuer ou publier doit absolument faire partie d'une institution reconnue et la personne doit s'inscrire au préalable sur le site.
 
     \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -158,16 +158,17 @@
             
             \item \textbf{Fiabilité}: l'application fonctionne correctement avec un haut taux de fiabilité. Elle ne plante pas et toutes les fonctionnalités demandées et prévues à la base sont présentes et fonctionnelles.
             
-            \item \textbf{Efficacité}: l'application se charge et réagit rapidement, pour autant que la connexion internet de l'utilisateur soit correcte (convenable ou optimale). L'application demande une quantité de mémoire relativement importante mais cela n'affecte pas les performances de l'application.
+            \item \textbf{Efficacité}: l'application charge et réagit rapidement, pour autant que la connexion internet de l'utilisateur soit correcte (convenable ou optimale). L'application demande une quantité de mémoire relativement importante mais cela n'affecte pas les performances de l'application.
             
             \item \textbf{Intégrité}: l'inscription sur la plate-forme requiert un mot de passe fort composé de chiffres et lettres minuscules et majuscules. L'utilisation de l'API requiert un token d'accès, seulement valable après authentification.
             
-            \item \textbf{Ergonomie}: l'application est facile d'utilisation, tout au plus 4 clics sont requis pour réaliser une action. La documentation est là pour aider ceux qui en ont besoin mais 95\% des utilisateurs n'en auront pas besoin.
+            \item \textbf{Ergonomie}: l'application est facile d'utilisation, il ne faut pas plus de quatre clics pour réaliser une action. La documentation est là pour aider ceux qui en ont besoin mais 95\% des utilisateurs n'en auront pas besoin.
             
             \item \textbf{Maintenabilité}: le code produit respecte plusieurs principes appris en cours d'ingénierie d'architecture logicielle (IALTEM).
+            
             \item \textbf{Souplesse}: chaque partie de l'application a été écrite de manière indépendante. Ainsi, l'évolution de l'application peut se faire sans violer les spécifications définies. Par exemple, on pourrait envisager de remplacer l'application par un application mobile Android, il suffirait simplement de modifier le front-end sans toucher au back-end.
 
-            \item \textbf{Portabilité}: l'application est utilisable sur n'importe quelle machine connectée à internet, pour autant qu'elle dispose d'un navigateur compatible . Nous recommandons d'avoir une version équivalente ou supérieure à ceux testés durant la conception de l'application, à savoir : 
+            \item \textbf{Portabilité}: l'application est utilisable sur n'importe quelle machine connectée à internet, pour autant qu'elle dispose d'un navigateur compatible . Nous recommandons d'avoir une version équivalente ou supérieure de ceux testés durant la conception de l'application, à savoir : 
                 \begin{enumerate}
                     \item Chrome v71.0.3578
                     \item Firefox v65.0
@@ -208,12 +209,12 @@
         \noindent Nous avons identifié deux risques en début de projet et ceux-ci ont bien été gérés dès le départ. Nous avons cependant rencontré un troisième risque en cours de projet. 
     
     \begin{enumerate}
-        \item  Le premier risque identifié était le partage du code entre nous. Nous nous y sommes confrontés dès le début du projet. Pour gérer ce problème, nous avons choisi d'utiliser Github, qui permet de  centraliser le code et de gérer les conflits de différence entre les versions de code de chacun. Pour le placer au niveau de la matrice de probabilité de risque, il revenait à 70\% de probabilité et 0,56 niveau impact du risque. \\ Nous avons trouvé une solution donc ce risque a été évité.
-        \item Un autre risque était l'utilisation de technologies différentes. Afin d'éviter que chaque personne n'utilise une technologie différente, il a fallu se mettre d'accord sur les technologies, utilisée à la fois en back-end et en front-end. Nous avons géré ce risque en commençant par comparer les technologies et libraires à notre disposition en tenant compte des contraintes.
-        Ensuite, avant de nous lancer dans le développement, chaque groupe a du apprendre les bases des technologies à utiliser pour sa partie de l'application.\\
+        \item Le premier risque identifié était le partage du code entre nous. Nous nous y sommes confrontés dès le début du projet. Pour gérer ce problème, nous avons choisi d'utiliser Github, qui permet de  centraliser le code et de gérer les conflits de différence entre les versions de code de chacun. Pour le placer au niveau de la matrice de probabilité de risque, il revenait à 70\% de probabilité et 0,56 niveau impact du risque. \\ Nous avons trouvé une solution donc ce risque a été évité.
+        \item Un autre risque était l'utilisation de technologies différentes. Afin d'éviter que chaque personne n'utilise une technologie différente, il a fallu se mettre d'accord sur les technologies, utilisée à la fois en back-end et en front-end. Nous avons géré ce risque en commençant par comparer les technologies et libraires mises à notre disposition en tenant compte des contraintes.
+        Ensuite, avant de nous lancer dans le développement, chaque groupe a dû apprendre les bases des technologies à utiliser pour sa partie de l'application.\\
         Enfin, pour combler les différentes lacunes, on a réalisé du pair programming.
-        Concrètement, à chaque fois qu'un membre du groupe ne pouvait pas réaliser sa tâche ou était dans l'impossibilité de la faire, un autre membre ayant déjà réalisé sa tâche ou ayant un peu plus d'expérience venait épauler les autres.\\ Une solution a également été trouvée pour ce risque, il a été évité.
-        \item Un risque lié au produit est les navigateurs. Les visualisations proposées dans l'application étaient dépendantes du \textit{navigateur} et de sa version de \textit{Javascript}. Il était fort possible qu'avec certains navigateurs, l'affichage de la visualisation ne soit pas disponible ou ne soit pas correct. Pour réduire l'impact, nous avons affiché l'application sur plusieurs navigateurs et choisi le navigateur le plus optimal pour l'affichage des visualisations: Chrome. Nous avons conseillé ce navigateur pour avoir la meilleure expérience utilisateur. L'application fonctionne également sur Firefox et sur Safari.\\ Ce risque a été réduit: les navigateur testé sont les plus utilisés et nous en recommandons un.
+        Concrètement, à chaque fois qu'un membre du groupe ne pouvait pas réaliser sa tâche ou était dans l'impossibilité de la faire, un autre membre ayant déjà réalisé sa tâche ou ayant un peu plus d'expérience venait l'épauler.\\ Une solution a également été trouvée pour ce risque, il a été évité.
+        \item Un risque lié au produit est le navigateur utilisé. Les visualisations proposées dans l'application sont dépendantes du \textit{navigateur} et de sa version de \textit{Javascript}. Il était fort possible qu'avec certains navigateurs, l'affichage de la visualisation ne soit pas disponible ou ne soit pas correct. Pour réduire l'impact, nous avons affiché l'application sur plusieurs navigateurs et choisi le navigateur le plus optimal pour l'affichage des visualisations: Chrome. Nous avons conseillé ce navigateur pour avoir la meilleure expérience utilisateur. L'application fonctionne également sur Firefox et sur Safari.\\ Ce risque a été réduit: les navigateurs testés sont les plus utilisés et nous en recommandons un.
     \end{enumerate}
     
     
@@ -224,7 +225,7 @@
     \section{Planification du projet}
         \subsection{Scope Management}
         \noindent Nous avons commencé le projet par une phase de conception et d'analyse. Une fois l'analyse faite à notre niveau et validée par le client, avec certaines remarques, nous avons commencé par l'apprentissage des outils et technologies à utiliser durant le développement. Nous sommes ensuite passés à l'installation de tous les outils et librairies nécessaires pour le bon déroulement du projet. Une fois la mise en place terminée, la phase de développement a commencé.\\
-        La plus grosse partie au lancement du projet était le back-end. L'équipe front-end s'est aussi lancée de son côté dans la réalisation de ses tâches. La connexion entre le back-end et le front-end n'a cependant été faite qu'une fois le back-end semi-fonctionnel ( avec les fonctionnalités de base), pour permettre d'avancer sur le reste sans devoir attendre. Au fur à mesure que l'API s'enrichissait de nouvelles fonctionnalités, celles-ci étaient connectés au front-end.\\
+        La plus grosse partie au lancement du projet était le back-end. L'équipe front-end s'est aussi lancée de son côté dans la réalisation de ses tâches. La connexion entre le back-end et le front-end n'a cependant été faite qu'une fois le back-end semi-fonctionnel (avec les fonctionnalités de base), pour permettre d'avancer sur le reste sans devoir attendre. Au fur à mesure que l'API s'enrichissait de nouvelles fonctionnalités, celles-ci étaient connectées au front-end.\\
         Le modèle RACI de notre projet est le suivant:
         \begin{center}
             \includegraphics[scale=.5]{images/RACI.png}
@@ -241,7 +242,7 @@
                 
                                 
                  \begin{center}                       \includegraphics[scale=.07]{images/sprint/must-nice-have.jpg}
-                    \captionof{figure}{Sprint 1: Nice to and must have board}
+                    \captionof{figure}{Sprint 1: Nice-to- and must-have board}
                     \label{fig:sprint1_graph}
                 \end{center}
                 
@@ -290,14 +291,14 @@
                     \captionof{figure}{Sprint 1: Burndown chart}
                     \label{fig:sprint1_graph}
                 \end{center}
-                Comme le montre ce premier burndown chart, nous avions oublié d'estimer nos tâches et donc celui reste toujours à 0.
+                Comme le montre ce premier burndown chart, nous avions oublié d'estimer nos tâches, celui-ci reste donc toujours à 0.
                 
                 
             \subsubsection{Sprint 2}
-                \noindent Durant ce deuxième sprint, nous avions peaufiné les précédents wireframes et entamé ceux concernant les visualisations disponibles dans l'application web. Nous avons appris de notre précédente erreur, ainsi, pour l'estimation des tâches actuelles et futures, nous avons utilisé une échelle de valeur suivant les chiffres de Fibonacci: 1, 2, 3, 5, 8. Plus le chiffre est grand, plus il faudra d'efforts pour accomplir la tâche. Nous nous sommes réparti les tâches de manière à ce que chaque membre de l'équipe ait une charge de travail égale. Le SM distribuait les tâches pour que chaque personne ait une charge de travail égale à 10 points (2 tâches à 5 points ou 3 tâches à 3 points et une à 1 point,...).
+                \noindent Durant ce deuxième sprint, nous avons peaufiné les précédents wireframes et entamé ceux concernant les visualisations disponibles dans l'application web. Nous avons appris de notre précédente erreur, ainsi, pour l'estimation des tâches actuelles et futures, nous avons utilisé une échelle de valeurs suivant les chiffres de Fibonacci: 1, 2, 3, 5, 8. Plus le chiffre est grand, plus il faudra d'efforts pour accomplir la tâche. Nous nous sommes réparti les tâches de manière à ce que chaque membre de l'équipe ait une charge de travail identique. Le SM distribuait les tâches pour que chaque personne ait une charge de travail égale à 10 points (2 tâches à 5 points, 3 tâches à 3 points et une à 1 point,...).
                 \newline
                 Nous nous sommes rendus compte que l'on avait oublié le sprint rétrospective au sprint précédent. Nous l'avons donc fait à la fin de ce sprint review. 
-                Nous avons utilisé le tableau du local et de post-it de différentes couleurs. Nous avons établi 4 catégories \textit{K.I.S.S.} (Keep, Improve, Start doing, Stop doing) et chacun devait se servir des post-it pour suggérer des activités ou idées pour améliorer le prochain sprint.
+                Nous avons utilisé le tableau du local et des post-it de différentes couleurs. Nous avons établi 4 catégories \textit{K.I.S.S.} (Keep, Improve, Start doing, Stop doing) et chacun devait se servir des post-it pour suggérer des activités ou idées pour améliorer le prochain sprint.
 
 
                 \begin{center}                               
@@ -327,7 +328,7 @@
                     \label{fig:sprint3_graph}
                 \end{center}
                 
-                \noindent Malgré cela, nous avons à nouveau fait une erreur sur l'estimation du temps que nous pouvions mettre dans le développement.
+                \noindent Malgré cela, nous avons à nouveau fait des erreurs dans l'estimation du temps que nous pouvions mettre dans le développement.
                 
                 
             \subsubsection{Sprint 4}
@@ -343,7 +344,7 @@
         
         
             \subsubsection{Sprint 5}
-                \noindent Il s'agit du dernier sprint du projet, nous avons découvert pas mal de bugs et fonctionnalités manquantes ou pas assez développées mais l'ensemble de l'application était présent. Le graphique de ce sprint montre bien que des tâches ont été ajoutées en cours de sprint car la charge de travail restant monte et descend à plusieurs reprises. 
+                \noindent Il s'agit du dernier sprint du projet, nous avons découvert pas mal de bugs et fonctionnalités manquantes ou pas assez développées mais l'ensemble de l'application était présent. Le graphique de ce sprint montre bien que des tâches ont été ajoutées en cours de sprint car la charge de travail restante monte et descend à plusieurs reprises. 
                 
                 \begin{center}
                     %%\includegraphics[scale=1]{images/graph/sprint5.png}
@@ -354,7 +355,7 @@
                 
                 
            \subsubsection{Conclusion} 
-               \noindent Nous avons eu du mal au début à bien répartir les tâches avec de bonnes estimations de temps, mais au fur et à mesure, nous avons commencé mieux nous en sortir. \\
+               \noindent Nous avons eu du mal au début à bien répartir les tâches avec de bonnes estimations de temps mais, au fur et à mesure, nous avons commencé mieux nous en sortir. \\
                 L'un de nos plus gros défaut dans la gestion du temps et des sprints est que nous n'avons pas fait comme montré au cours (tableaux d'emplois du temps,... pour chaque personne). Il aurait également fallu attribuer dès le début toutes les tâches de tous les sprints et ne pas les configurer en fin de sprint précédent mais cela ne rentre pas dans la philosophie Agile. 
                 
         
